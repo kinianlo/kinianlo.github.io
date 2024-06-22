@@ -1,5 +1,23 @@
 {{- /* Head custom content area start */ -}}
-{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
-{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{- /* Insert any custom code (web-analytics, resources, etc.) - it will appear in the
+
+<head></head> section of every page. */ -}}
+{{- /* Can be overwritten by partial with the same name in the global layouts. */ -}}
+
 {{ partial "math.html" . }}
+
+{{ $inDeployment := eq (getenv "HUGO_ENV") "production" }}
+
+{{- if not $inDeployment -}}
+<style>
+    body {
+        border: 10px solid palevioletred;
+        /* Adjust the color and width of the border as needed */
+        box-sizing: border-box;
+        overflow: auto;
+        /* Ensure the content can still scroll */
+    }
+</style>
+{{- end -}}
+
 {{- /* Head custom content area end */ -}}
