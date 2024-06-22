@@ -31,7 +31,9 @@ $$
 $$
 
 We prove the following lemma which relates the probability distributions, before and after a change in logits.
-#### Lemma
+
+**Lemma**
+
 For any $ i \in \{1, 2, \dots, v\} $, we have
 $$
 p_i = p_i' \left(\frac{e^{-\Delta l_i}}{\sum_{j=1}^v p_j' e^{-\Delta l_j}}\right). \tag{1}
