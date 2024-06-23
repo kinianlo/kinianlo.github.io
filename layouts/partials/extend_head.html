@@ -10,12 +10,11 @@
 
 {{- if not $inDeployment -}}
 <style>
+    /* Visual indicator for local deployment */
     body {
-        border: 10px solid palevioletred;
-        /* Adjust the color and width of the border as needed */
+        border: 20px solid rgb(202, 27, 27);
         box-sizing: border-box;
         overflow: auto;
-        /* Ensure the content can still scroll */
     }
 </style>
 {{- end -}}

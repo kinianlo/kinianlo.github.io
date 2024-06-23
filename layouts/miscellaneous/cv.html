@@ -1,0 +1,130 @@
+{{- define "main" }}
+<section id="education">
+  <div class="container">
+    <div class="section-header">
+      <h2>Education</h2>
+    </div>
+    {{ range .Site.Data.cv.education }}
+    <div class="education-entry">
+      <img src="{{ .logo }}" alt="{{ .school }} Logo" class="school-logo">
+      <div class="education-details">
+        <div class="education-header">
+          <h3>{{ .school }}</h3>
+          <span class="education-years">{{ .years }}</span>
+        </div>
+        <p class="education-degree">{{ .degree }}</p>
+        <p class="education-description">{{ .description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section id="work_experience">
+  <div class="container">
+    <div class="section-header">
+      <h2>Work Experience</h2>
+    </div>
+    {{ range .Site.Data.cv.work_experience }}
+    <div class="work-entry">
+      <img src="{{ .logo }}" alt="{{ .company }} Logo" class="company-logo">
+      <div class="work-details">
+        <div class="work-header">
+          <h3>{{ .company }}</h3>
+          <span class="work-years">{{ .years }}</span>
+        </div>
+        <p class="work-position">{{ .position }}</p>
+        <p class="work-description">{{ .description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  {{ range .Site.Data.cv.skills}}
+  <div class="skill-section">
+    <h3>{{ .section }}</h3>
+    <ul>
+      {{ range .items }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>Projects</h2>
+    </div>
+    {{ range .Site.Data.cv.projects }}
+    <div class="project-entry">
+      <h3>{{ .title }}</h3>
+      <p class="project-description">{{ .description }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<style>
+  #education,
+  #work_experience,
+  #skills,
+  #projects {
+    padding: 0px 0;
+  }
+
+  .section-header {
+    padding: 20px 0;
+  }
+
+  .education-entry,
+  .work-entry {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .school-logo,
+  .company-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .education-details,
+  .work-details {
+    flex-grow: 1;
+  }
+
+  .education-header,
+  .work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .education-header h3,
+  .work-header h3 {
+    margin: 0;
+  }
+
+  .education-years,
+  .work-years {
+    color: #555;
+  }
+
+  .education-degree,
+  .work-position {
+    font-style: italic;
+  }
+
+  .education-description,
+  .work-description,
+  .project-description {
+    margin-top: 10px;
+  }
+</style>
+{{- end }}{{/* end main */}}
