@@ -1,0 +1,51 @@
+education:
+  - school: "University College London"
+    logo: "/images/harvard-logo.png"
+    degree: "PhD in Computer Science"
+    years: "2020 - 2024"
+    description: "Focused on software engineering, algorithms, and computer systems. Graduated with honors."
+  - school: "University College London"
+    logo: "/images/harvard-logo.png"
+    degree: "MRes in Quantum Technologies"
+    years: "2020 - 2024"
+    description: "Focused on software engineering, algorithms, and computer systems. Graduated with honors."
+  - school: "University of Cambridge"
+    logo: "/images/mit-logo.png"
+    degree: "MASt Applied Mathematics"
+    years: "2019 - 2020"
+    description: "Specialized in machine learning, big data analytics, and statistical modeling. Completed a thesis on predictive analytics."
+  - school: "Imperial College London"
+    logo: "/images/mit-logo.png"
+    degree: "BSc Physics with Theoretical Physics"
+    years: "2019 - 2020"
+    description: "Specialized in machine learning, big data analytics, and statistical modeling. Completed a thesis on predictive analytics."
+
+work_experience:
+  - company: "Tech Solutions Inc."
+    logo: "/images/tech-solutions-logo.png"
+    position: "Senior Software Engineer"
+    years: "2018 - Present"
+    description: "Leading a team of developers in building scalable web applications. Implemented new features, optimized performance, and improved code quality."
+
+skills:
+  - section: "Programming Languages"
+    items:
+      - "Python"
+      - "JavaScript"
+      - "Java"
+  - section: "Frameworks"
+    items:
+      - "Django"
+      - "React"
+      - "Spring Boot"
+  - section: "Tools"
+    items:
+      - "Git"
+      - "Docker"
+      - "Kubernetes"
+
+projects:
+  - title: "Project Alpha"
+    description: "Developed a real-time analytics dashboard for monitoring system performance. Used React for the frontend and Flask for the backend."
+  - title: "Project Beta"
+    description: "Created a machine learning model to predict customer churn. The project involved data preprocessing, feature engineering, and model training using Python."
