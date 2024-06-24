@@ -5,6 +5,9 @@ date: 2024-06-17 01:06:04
 tags: 
     - LLM
 ---
+
+> OpenAI has modified their API to return the log probabilities before any logit bias is applied. Hence the methods described in this article are no longer applicable.
+
 The aim of this article is to provide an alternative derivation of the results in Mattew Finlayson's article [Obtaining logprobs from an LLM API](https://mattf1n.github.io/openlogprobs.html).
 
 Most LLM APIs return the logprobs of only the top-$ k $ predictions. The value of $ k $ is often small, in the order of 10. The goal is to extract the logprobs of all tokens in the vocabulary.
