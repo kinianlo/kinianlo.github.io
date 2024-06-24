@@ -85,10 +85,12 @@ params:
     Title: ""
     Content: >
       Hello! I am a PhD student in the [Principles of Natural Language, Logic and Statistics Lab](https://www.ucl.ac.uk/computer-science/research/research-labs/principles-natural-language-logic-and-statistics) within the Computer Science Department at University College London.
-      I am interested in the intersection of quantum computing and AI.
-
+      My research focuses on the intersection of quantum computing and AI, specifically exploring the quantum phenomenon of contextuality and its potential applications in natural language processing (NLP).
 
   socialIcons:
+    - name: googlescholar
+      title: Visit my Google Scholar profile
+      url: "https://scholar.google.co.uk/citations?user=NIIt0oMAAAAJ"
     - name: github
       title: Visit my GitHub profile
       url: "https://github.com/kinianlo"
